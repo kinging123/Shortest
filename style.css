@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container h2 {
+  display: inline-block;
+  padding: 0 3px;
+  margin: 50px 0;
+  min-width: 200px;
+  position: relative;
+}
+
+.container h2:after {
+  width: 50vw;
+  height: 200px;
+  content: " ";
+  position: absolute;
+  top: -50px;
+  left: -10vw;
+}
+
+.container h2:before {
+  content: "1. ";
+  position: absolute;
+  left: -20px;
+  padding-right: 10px;
+}
+
+.container h2:focus, .container h2:focus:before {
+  min-width: 10px;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+footer * {
+  display: inline-block;
+}
+
+footer img {
+  max-height: 30px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+footer img:hover + span, footer img + span:hover {
+  visibility: visible;
+}
+
+footer span {
+  line-height: 30px;
+  vertical-align: middle;
+  visibility: hidden;
+}

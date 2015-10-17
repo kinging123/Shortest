@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Shortest - the Shortest TODO list ever.</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your tasks for today:</h1>
+      <h2 contenteditable>e.g. Fix the world</h2>
+    </div>
+    <footer><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABYUlEQVRIS72W7TEEQRCGn4uAEIgAGcgAESACRIAIEAEi4DKQgbsICIEIqGdr+2qwtz27V6f/7FRtT79vf8+EftkCDoB9wPNuqz4D3oEXYNqeOy1NltjX2CVwkhCI3w/AdRdQF8AhcA9sVhoPtQ/gFHgu7/0GkLHGVxFB9KiREkDmT6tYLu4ehScBYMxfk7B8Fsz0dKOHjOHaMycBoEvHCfs74LzVuQXOEv1Hi0QA2b9VhMbk6bri2fLNZFsAWd1kmu1/61+JfsiuXQhQy6bMQRaeAJ4KIKudjAowNAeanAnwVWFcFTv1qtX1a6en8i8AtSEa48F8SJLHADRJri3TMQBNmdY22hiAptGUmlExFGAxKgTQC5OdDbBYQBLq2xc2pd2+GHaCrHVcR8OsdeEEiJ4Ygr5wdXWwYZFg78qMi+bEcZDtiNA3oer70vghy14VJZAexbMlhuK8eLbI+I/hMPANH/5RNlygPRsAAAAASUVORK5CYII="><span>Made w/ &lt;3 by <a href="http://reuven.karasik.org" target="_blank">Reuven Karasik</a></span></footer>
+    <script>
+      var h3 = document.getElementsByTagName('h2')[0];
+      h3.addEventListener('keydown', function(e) {
+      	if(e.keyCode == 13)
+      		e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
